@@ -3,48 +3,260 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Css Grid</title>
-    <link rel="stylesheet" href="./main.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FurniShop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-white text-gray-900 font-sans">
 
-    <div class="grid__container">
+    <header class="relative bg-cover bg-center h-screen flex flex-col justify-between" style="background-image: url('./img/Group\ 6356097.png');">
+        <nav class="flex items-center justify-between px-12 py-6 max-w-7xl mx-auto w-full">
+            <div class="text-2xl font-bold tracking-wider text-white">FurniShop</div>
+            <ul class="flex space-x-8 text-sm font-medium text-gray-300">
+                <li><a href="#" class="hover:text-white transition">Home</a></li>
+                <li><a href="#" class="hover:text-white transition">About</a></li>
+                <li><a href="#" class="hover:text-white transition">Features</a></li>
+                <li><a href="#" class="hover:text-white transition">Contact</a></li>
+            </ul>
+        </nav>
 
-        <div class="grid__container--item--header">
-            <h1>My Header</h1>
+        <div class="text-center px-4 max-w-3xl mx-auto -mt-20">
+            <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4 text-white">
+                Creative Home Simplify Your Furniture
+            </h1>
+            <p class="text-gray-300 text-sm md:text-base mb-8 max-w-lg mx-auto">
+                Do i have consent to record this meeting gain locaion, root-and-branch, review, nor game plan who's the goto
+            </p>
+            <a href="#" class="inline-block bg-white/25 hover:bg-white/40 backdrop-blur-md border border-white/30 text-white px-8 py-3 rounded-full font-medium transition">
+                Shop Now
+            </a>
         </div>
 
-        <div class="grid__container--item">
-
-
-            <div class="grid__container--item--inside">
-
-            <div a href="#" class="link">Link 1</a></div>
-            <div a href="#" class="link">Link 2</a></div>
-            <div a href="#" class="link">Link 3</a></div>
-            
-
+        <div class="max-w-5xl mx-auto w-full px-4 mb-12">
+            <div class="bg-[#1b5b55] rounded-2xl py-6 px-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-center shadow-xl">
+                <div>
+                    <h3 class="text-3xl font-bold text-white">7</h3>
+                    <p class="text-xs text-gray-200 mt-1">Year Experience</p>
+                </div>
+                <div class="border-l border-teal-700/50">
+                    <h3 class="text-3xl font-bold text-white">2</h3>
+                    <p class="text-xs text-gray-200 mt-1">Opened in the country</p>
+                </div>
+                <div class="border-l border-teal-700/50">
+                    <h3 class="text-3xl font-bold text-white">10k+</h3>
+                    <p class="text-xs text-gray-200 mt-1">Furniture sold</p>
+                </div>
+                <div class="border-l border-teal-700/50">
+                    <h3 class="text-3xl font-bold text-white">260+</h3>
+                    <p class="text-xs text-gray-200 mt-1">Variant Furniture</p>
+                </div>
+            </div>
         </div>
-        </div>
+    </header>
 
-        <div class="grid__container--item--h1-p">
-            <h1 class="grid__container--item--h1">Lorem Ipsum</h1>
-            <p class="grid__container--item--p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>
-                Exercitationem at similique cumque provident impedit inventore recusandae vitae iusto <br>
-                dolor dignissimos, soluta aspernatur aperiam esse error ea <br>
-                perferendis quaerat nam dolorem! <br>
+    <section class="py-20 px-6 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+            <img src="img/Insert Image Here.png" alt="Aesthetic Sofa" class="rounded-2xl shadow-lg w-full object-cover">
+        </div>
+        <div>
+            <h2 class="text-3xl font-bold mb-4">We Create Your Home More Aesthetic</h2>
+            <p class="text-gray-600 text-sm mb-6 leading-relaxed">
+                Furnitre power is a software as services for multiperpose business management system,
+            </p>
+            <div class="space-y-4">
+                <div class="flex items-start space-x-3">
+                    <span class="text-teal-600 text-xl font-bold">✔</span>
+                    <div>
+                        <h4 class="font-semibold text-sm">Valuation Services</h4>
+                        <p class="text-xs text-gray-500">Sometimes features require a short description. This can be detailed description</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-3">
+                    <span class="text-teal-600 text-xl font-bold">✔</span>
+                    <div>
+                        <h4 class="font-semibold text-sm">Development of Furniture Modelss</h4>
+                        <p class="text-xs text-gray-500">Sometimes features require a short description. This can be detailed description</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 px-6 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-6 items-center">
+            <div class="md:col-span-1">
+                <h2 class="text-2xl font-bold mb-3">New In<br>Store Now</h2>
+                <p class="text-xs text-gray-500 mb-6">Get the latest items immediately with promo prices</p>
+                <a href="#" class="text-sm font-semibold flex items-center space-x-2 text-teal-600 hover:text-teal-700 transition">
+                    <span>Check All</span>
+                    <span>→</span>
+                </a>
+            </div>
+
+            <div class="md:col-span-4 grid grid-cols-2 sm:grid-cols-4 gap-4">
+                <div class="relative rounded-xl overflow-hidden group h-64">
+                    <img src="img/Insert Image Here.png" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" alt="Chair">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-4">
+                        <span class="font-medium text-sm text-white">Chair</span>
+                    </div>
+                </div>
+                <div class="relative rounded-xl overflow-hidden group h-64">
+                    <img src="./img/erik-mclean-Ij9nIghkI6k-unsplash.png" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" alt="Bed">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-4">
+                        <span class="font-medium text-sm text-white">Bed</span>
+                    </div>
+                </div>
+                <div class="relative rounded-xl overflow-hidden group h-64">
+                    <img src="./img/sanibell-bv-g01h0WtY22s-unsplash.png" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" alt="Cupboard">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-4">
+                        <span class="font-medium text-sm text-white">Cupboard</span>
+                    </div>
+                </div>
+                <div class="relative rounded-xl overflow-hidden group h-64">
+                    <img src="img/jean-philippe-delberghe-Ry9WBo3qmoc-unsplash.png" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" alt="Lighting">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-4">
+                        <span class="font-medium text-sm text-white">Lighting</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+            <h2 class="text-3xl font-bold mb-4 leading-tight">The Best Furniture Manufacturer Of Your Choice</h2>
+            <p class="text-gray-600 text-sm leading-relaxed">
+                Furnitre power is a software as services for multiperpose business management system, especially for them who are running two or more business exploree the future Furnitre power is a software as services
             </p>
         </div>
+        <div>
+            <img src="img/Insert Image Here (1).png" alt="Kitchen Interior" class="rounded-2xl shadow-lg w-full object-cover">
+        </div>
+    </section>
 
-        <div class="grid__container--item--footer">
-            <p class="grid__container--item--footer--p">Footer</p>
+    <section class="py-20 px-6 max-w-7xl mx-auto">
+        
+
+        <div class="w-full mb-12">
+            <img src="img/All Product.png" alt="All Product" class="w-full h-auto object-contain rounded-2xl shadow-md">
         </div>
 
+    </section>
 
+    <section class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-bold mb-6">What People Are Saying About Us</h2>
+                
+                <div class="flex items-center space-x-4 mb-6">
+                    <img src="./img/Ellipse 202.svg" alt="Josh Smith" class="w-12 h-12 rounded-full object-cover">
+                    <div>
+                        <h4 class="font-semibold text-sm">Josh Smith</h4>
+                        <p class="text-xs text-gray-400">Manager of The New York Times</p>
+                    </div>
+                </div>
 
+                <p class="text-gray-600 text-sm italic mb-8 leading-relaxed">
+                    "They are have a perfect touch for make something so professional ,interest and useful for a lot of people ."
+                </p>
 
-    </div>
-    
+                <div class="flex items-center space-x-4">
+                    <button class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center text-gray-400 hover:border-gray-400 transition">←</button>
+                    <button class="w-10 h-10 rounded-full bg-[#1b5b55] flex items-center justify-center text-white hover:bg-teal-800 transition">→</button>
+                </div>
+            </div>
+
+            <div>
+                <img src="./img/Rectangle 925.png" alt="Interior Room" class="rounded-2xl shadow-lg w-full h-[380px] object-cover">
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#1b222c] text-white">
+   
+        <div class="max-w-7xl mx-auto px-6 pt-16 pb-16">
+            <div class="relative bg-cover bg-center rounded-3xl overflow-hidden py-20 px-8 md:px-16 flex flex-col md:flex-row items-center justify-between" style="background-image: url('img/Rectangle 928.png');">
+   
+                <div class="absolute inset-0 bg-[#1b5b55]/80"></div>
+                
+                <div class="relative z-10 max-w-lg mb-8 md:mb-0">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-3">Get more discount Off your order</h2>
+                    <p class="text-gray-200 text-sm">Join our mailing list</p>
+                </div>
+
+                <div class="relative z-10 w-full md:w-auto flex flex-col sm:flex-row items-center bg-white rounded-full p-2 shadow-lg max-w-md">
+                    <input type="email" placeholder="Your email address" class="w-full px-4 py-2 text-sm text-gray-800 focus:outline-none rounded-full">
+                    <button class="w-full sm:w-auto mt-2 sm:mt-0 bg-[#1b222c] hover:bg-black text-white px-6 py-3 rounded-full text-sm font-medium transition whitespace-nowrap">
+                        Shop Now
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 pb-12">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center pb-10 border-b border-gray-700">
+                <div class="text-2xl font-bold tracking-wider mb-6 md:mb-0">FurniShop</div>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 hover:bg-teal-700 flex items-center justify-center transition text-gray-300"> ig </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 hover:bg-teal-700 flex items-center justify-center transition text-gray-300"> f </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 hover:bg-teal-700 flex items-center justify-center transition text-gray-300"> t </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 hover:bg-teal-700 flex items-center justify-center transition text-gray-300"> gh </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 hover:bg-teal-700 flex items-center justify-center transition text-gray-300"> in </a>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 py-10 text-sm text-gray-400">
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Our Products</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="hover:text-white transition">The Support Suite</a></li>
+                        <li><a href="#" class="hover:text-white transition">The Sales Suite</a></li>
+                        <li><a href="#" class="hover:text-white transition">Support</a></li>
+                        <li><a href="#" class="hover:text-white transition">Guide</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Top Features</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="hover:text-white transition">Ticketing System</a></li>
+                        <li><a href="#" class="hover:text-white transition">Knowledge Base</a></li>
+                        <li><a href="#" class="hover:text-white transition">Community Forums</a></li>
+                        <li><a href="#" class="hover:text-white transition">Help Desk Software</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Resources</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="hover:text-white transition">Product Support</a></li>
+                        <li><a href="#" class="hover:text-white transition">Request Demo</a></li>
+                        <li><a href="#" class="hover:text-white transition">Library</a></li>
+                        <li><a href="#" class="hover:text-white transition">Peoplepower Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Company</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="#" class="hover:text-white transition">Press</a></li>
+                        <li><a href="#" class="hover:text-white transition">Investors</a></li>
+                        <li><a href="#" class="hover:text-white transition">Events</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Favourite Things</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="hover:text-white transition">For Enterprise</a></li>
+                        <li><a href="#" class="hover:text-white transition">For Startups</a></li>
+                        <li><a href="#" class="hover:text-white transition">For Benchmark</a></li>
+                        <li><a href="#" class="hover:text-white transition">For Small Business</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="text-center pt-8 border-t border-gray-700/50 text-xs text-gray-500">
+                © NameBrand 2022 - All Rights Reserved
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
